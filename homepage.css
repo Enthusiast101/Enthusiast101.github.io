@@ -123,86 +123,6 @@ li {
   color: rgb(14, 17, 22);
 }
 
-/* My projects */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
-}
-
-.project-items {
-  display: flex;
-  width: auto;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: black;
- 
-  box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
-  border-radius: 20px 0px 20px 0px;
-}
-
-.project-items-container {
-  flex: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 10px 10px 10px 10px;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-items-img {
-  flex: 20%;
-  margin-right: 20px;
-}
-
-.project-items-txt {
-  flex: 80%;
-}
-
-.modify-thumbnail {
-  float: left;
-  border-radius: 10px 0px 10px 0px;
-  filter: brightness(80%);
-  width: 500px;
-  height: 150px;
-}
-
-/* Let's Connect */
-.connect {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgb(0, 0, 0);
-}
-
-.connect-items {
-  display: flex;
-}
-
-.connect-social-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: center;
-  flex-basis: 25em;
-}
-
-.connect-icons {
-  margin-left: 10px;
-  margin-right: 10px;
-  flex: calc(100/ 3);
-}
-
-.connect h2 {
-  margin-bottom: 20px;
-}
-
-
 /* Less than 1054px */
 @media (max-width: 1054px) {
   /* Making Header */
@@ -339,6 +259,86 @@ li {
     flex: 60%;
     text-align: left;
   }
+
+  /* My projects */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .project-items {
+    display: flex;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: black;
+  
+    box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
+    border-radius: 20px 0px 20px 0px;
+  }
+
+  .project-items-container {
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-items-img {
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .project-items-txt {
+    flex: 80%;
+  }
+
+  .modify-thumbnail {
+    float: left;
+    border-radius: 10px 0px 10px 0px;
+    filter: brightness(80%);
+    width: 500px;
+    height: 150px;
+  }
+
+  /* Let's Connect */
+  .connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .connect-items {
+    display: flex;
+  }
+
+  .connect-social-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: center;
+    flex-basis: 25em;
+  }
+
+  .connect-icons {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: calc(100/ 3);
+  }
+
+  .connect h2 {
+    margin-bottom: 20px;
+  }
+
 }
 
 
@@ -467,4 +467,84 @@ li {
     flex: 60%;
     text-align: left;
   }
+
+   /* My projects */
+   .project-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .project-items {
+    display: flex;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: black;
+  
+    box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
+    border-radius: 20px 0px 20px 0px;
+  }
+
+  .project-items-container {
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-items-img {
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .project-items-txt {
+    flex: 80%;
+  }
+
+  .modify-thumbnail {
+    float: left;
+    border-radius: 10px 0px 10px 0px;
+    filter: brightness(80%);
+    width: 500px;
+    height: 150px;
+  }
+
+  /* Let's Connect */
+  .connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .connect-items {
+    display: flex;
+  }
+
+  .connect-social-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: center;
+    flex-basis: 25em;
+  }
+
+  .connect-icons {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: calc(100/ 3);
+  }
+
+  .connect h2 {
+    margin-bottom: 20px;
+  }
+
 }
