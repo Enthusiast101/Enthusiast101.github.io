@@ -125,6 +125,18 @@ li {
 
 /* Less than 1054px */
 @media (max-width: 1054px) {
+  body {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
