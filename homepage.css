@@ -204,6 +204,9 @@ li {
 
 /* Less than 1054px */
 @media (max-width: 1054px) {
+  body {
+    zoom: 0.5;
+  }
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
