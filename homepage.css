@@ -3,19 +3,18 @@ html {
 }
 
 body {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(14, 17, 22);
   color: rgba(255, 255, 255, 0.6);
   font-size: 18px;
-  min-width: 663px;
 }
 
 h2 {
   font-size: 50px;
   line-height: 60px;
-  font-family: Righteous;
+  font-family: 'Righteous', cursive;
   font-weight: 200;
   color: #fff;
   margin-top: 1rem;
