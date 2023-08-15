@@ -8,14 +8,14 @@ body {
   padding: 0;
   background-color: rgb(14, 17, 22);
   color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
+  font-size: 1rem;
   min-width: 663px;
 }
 
 h2 {
-  font-size: 50px;
   line-height: 60px;
   font-family: 'Righteous', cursive;
+  font-size: 3rem;
   font-weight: 200;
   color: #fff;
   margin-top: 1rem;
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -288,6 +288,7 @@ li {
     text-align: left;
     justify-content: center;
     align-items: center;
+    max-height: 8rem;
   }
 
   .project-items-img {
@@ -303,8 +304,6 @@ li {
     float: left;
     border-radius: 10px 0px 10px 0px;
     filter: brightness(80%);
-    width: 500px;
-    height: 150px;
   }
 
   /* Let's Connect */
