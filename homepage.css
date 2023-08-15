@@ -10,7 +10,7 @@ body {
   background-color: rgb(14, 17, 22);
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
-  min-width: 663px;
+  
 }
 
 h2 {
@@ -126,7 +126,6 @@ li {
 
 /* Less than 1054px */
 @media (max-width: 1054px) {
-
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
@@ -162,7 +161,7 @@ li {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -188,7 +187,6 @@ li {
   .interest-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
   }
 
   .interest-items {
@@ -225,6 +223,7 @@ li {
 
   /* My Skills and Tools */
   .skills {
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 
@@ -266,6 +265,7 @@ li {
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
+    padding-top: 25px;
   }
 
   .project-items {
@@ -342,7 +342,7 @@ li {
 
 
 /* Greater than 1055px */
-@media (min-width: 1055px) and (orientation: landscape){
+@media (min-width: 1055px){
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
@@ -403,6 +403,7 @@ li {
   }
 
   .interest-items {
+    margin-top: 0;
     margin: auto 5rem;
     width: 100%;
     background-color: black;
