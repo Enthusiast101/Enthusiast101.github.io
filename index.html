@@ -131,6 +131,7 @@
       <div class="skills">
         <hr></hr>
         <h2 align="center">Skills</h2>
+
         <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
@@ -152,6 +153,8 @@
               </div>
             </div>
           </div>
+          </div>
+          <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -162,8 +165,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -174,6 +175,8 @@
               </div>
             </div>
           </div>
+          </div>
+          <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -195,6 +198,8 @@
             </div>
           </div>
         </div>
+
+      
         <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
@@ -216,6 +221,10 @@
               </div>
             </div>
           </div>
+        </div>
+  
+  
+        <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -226,8 +235,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="skills-n-tools-container">
+
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -238,6 +246,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -259,6 +269,7 @@
             </div>
           </div>
         </div>
+  
         <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
@@ -280,6 +291,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -290,8 +303,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="skills-n-tools-container">
+        
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -302,6 +314,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -323,17 +337,8 @@
             </div>
           </div>
         </div>
-        <div class="skills-n-tools-container">
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/flask-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>FLASK</p>
-              </div>
-            </div>
-          </div>
+  
+      <div class="skills-n-tools-container">
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -344,6 +349,7 @@
               </div>
             </div>
           </div>
+        
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
@@ -356,6 +362,7 @@
           </div>
         </div>
       </div>
+  
     </section>
 
     <section id="projects">
@@ -477,7 +484,7 @@
     const observerOptions = {
       root: null, // use the viewport as the container
       rootMargin: '0px',
-      threshold: 0// 50% of the section should be visible
+      threshold: 0.3// 50% of the section should be visible
     };
 
     const observerCallback = (entries, observer) => {
@@ -486,9 +493,8 @@
           currentSectionId = entry.target.id + "-li";
 
           var current_section = document.getElementById(currentSectionId);
-
+          console.log(currentSectionId);
           var element = current_section.querySelector("a");
-          // console.log(element);
           element.style.color = "#5cc99f";
 
           sectionVisited.push(currentSectionId);

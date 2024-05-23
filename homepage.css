@@ -240,18 +240,16 @@ li::marker {
 
   .skills-n-tools-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
+    margin: 0rem 5rem !important;
   }
 
   .skills-n-tools-items {
     align-items: center;
     margin: 1rem 1rem;
-    width: 25rem;
+    width: calc(100% - 2rem);
+    /* height: 200px; */
     background-color: black;
     box-shadow: 10px 10px 0px 0px rgba(254, 229, 181, 0.05);
     border-radius: 20px 0px 20px 0px;
@@ -289,8 +287,7 @@ li::marker {
   .project-items {
     display: flex;
     width: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0rem 5rem;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: black;
@@ -462,8 +459,7 @@ li::marker {
   .skills-n-tools-container {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0rem 5rem;
     /* margin-top: 30px;
     margin-bottom: 30px; */
   }
@@ -505,8 +501,7 @@ li::marker {
   .project-items {
     display: flex;
     width: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0rem 5rem;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: black;
