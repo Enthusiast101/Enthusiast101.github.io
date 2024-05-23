@@ -15,15 +15,15 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <ul class="header-li">
         <li class="logo"> 
           <img src="static/svg_assets/Logo.svg" class="modify-logo" />  
         </li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Connect</a></li>
+        <li id="about-li"><a href="#about">About</a></li>
+        <li id="interests-li"><a href="#interests">Interests</a></li>
+        <li id="skills-li"><a href="#skills">Skills</a></li>
+        <li id="projects-li"><a href="#projects">Projects</a></li>
+        <li id="contact-li"><a href="#contact">Connect</a></li>
       </ul>
     </nav>
   </header>
@@ -43,9 +43,9 @@
           <div class="aboutme-col-txt-items">
             <h2 align="left">About Me</h2>
             <p>
-              Hello!&#x1F44B; I am Anshul Kaushal, a second-year undergraduate at Panjab University. 
-              I am deeply interested in the relationship between Artificial Intelligence, 
-              particularly Reinforcement Learning and Neuroscience. I am currently educating myself, 
+              Hello!&#x1F44B; I am Anshul Kaushal, a sophomore at Panjab University. 
+              I am deeply interested in the relationship between Artificial Intelligence
+              and Neuroscience. I am currently educating myself, 
               gaining more knowledge, and seeking experience in this field.
             </p>
             <p> 
@@ -90,7 +90,7 @@
               <p align="center">Deep learning is a neural network-based subset of machine learning. It leverages 
                 multiple interconnected layers to automatically learn features from data, excelling in tasks like 
                 image recognition and natural language processing. Its power lies in vast data and computational 
-                resources, yet challenges include data requirements and model interpretability.</p>
+                resources. It has exceptional generalizability.</p>
             </div>
           </div>
         </div>
@@ -469,6 +469,50 @@
   </main>
 
   <script>
+    let sectionVisited = [];
+    document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    let currentSectionId = null;
+
+    const observerOptions = {
+      root: null, // use the viewport as the container
+      rootMargin: '0px',
+      threshold: 0// 50% of the section should be visible
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          currentSectionId = entry.target.id + "-li";
+
+          var current_section = document.getElementById(currentSectionId);
+
+          var element = current_section.querySelector("a");
+          // console.log(element);
+          element.style.color = "#5cc99f";
+
+          sectionVisited.push(currentSectionId);
+        }
+        if (sectionVisited.length > 1){
+          visited = sectionVisited.shift();
+          var current_section = document.getElementById(visited);
+
+          var element = current_section.querySelector("a");
+          // console.log(element);
+          element.style.color = "#ffffff";
+        }
+        // console.log(sectionVisited);
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+    
+
     document.addEventListener("DOMContentLoaded", function () {
       const navLinks = document.querySelectorAll("nav ul li a");
 
@@ -481,16 +525,18 @@
 
           if (targetElement) {
             const targetPosition = targetElement.offsetTop;
-            const offset = 75; 
+            // const offset = 75; 
 
             window.scrollTo({
-              top: targetPosition - offset,
+              top: targetPosition,
               behavior: "smooth",
             });
           }
         });
       });
     });
+
+
   </script>
 
   <footer>

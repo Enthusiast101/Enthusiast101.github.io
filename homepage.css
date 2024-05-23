@@ -35,7 +35,7 @@ h3 {
 hr {
   margin-top: 50px;
   border-width: 0;
-  background-color: rgb(92, 201, 159);
+  background-color: #5cc99f;
   height: 5px;
   width: 50px;
 }
@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(92, 201, 159);
+  color: #5cc99f;
 }
 
 .logo {
@@ -94,8 +94,8 @@ a {
   color: rgb(92, 201, 159);
 }
 
-li {
-  list-style-type: circle;
+li::marker {
+  font-size: 1.5rem;
 }
 
 /* SVG Modify */
@@ -121,13 +121,13 @@ li {
   margin-top: 40px;
   transition: 299ms;
   font-family: "Righteous", cursive;
-  font-size: large;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .button-modify:hover {
   border-color: rgb(92, 201, 159);
   background-color: rgb(92, 201, 159);
-  font-size: 18px;
   color: rgb(14, 17, 22);
 }
 
@@ -234,7 +234,6 @@ li {
 
   /* My Skills and Tools */
   .skills {
-    padding-top: 60px;
     padding-bottom: 50px;
     margin-bottom: 50px;
   }
@@ -362,6 +361,11 @@ li {
 
 /* Greater than 1055px */
 @media (min-width: 1055px){
+  nav {
+    padding-top: 17px;
+    z-index: 1;
+  }
+
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
