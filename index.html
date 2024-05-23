@@ -525,10 +525,10 @@
 
           if (targetElement) {
             const targetPosition = targetElement.offsetTop;
-            // const offset = 75; 
+            const offset = 75; 
 
             window.scrollTo({
-              top: targetPosition,
+              top: targetPosition - offset,
               behavior: "smooth",
             });
           }
