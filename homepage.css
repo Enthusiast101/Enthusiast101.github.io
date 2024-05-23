@@ -242,7 +242,7 @@ li::marker {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0rem 5rem !important;
+    margin: 0rem 2rem;
   }
 
   .skills-n-tools-items {
