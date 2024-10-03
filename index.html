@@ -16,14 +16,19 @@
   <header>
     <nav>
       <ul class="header-li">
-        <li class="logo"> 
-          <img src="static/svg_assets/Logo.svg" class="modify-logo" />  
-        </li>
-        <li id="about-li"><a href="#about">About</a></li>
-        <li id="interests-li"><a href="#interests">Interests</a></li>
-        <li id="skills-li"><a href="#skills">Skills</a></li>
-        <li id="projects-li"><a href="#projects">Projects</a></li>
-        <li id="contact-li"><a href="#contact">Connect</a></li>
+        <div class="name-logo">
+          <li class="logo"> 
+            <img src="static/svg_assets/Logo.svg" class="modify-logo" />  
+          </li>
+        </div>
+        <div class="site-sections">
+          <li class="about-li"><a href="#about">About</a></li>
+          <li class="interests-li"><a href="#interests">Interests</a></li>
+          <li class="experience-li"><a href="#experience">Experience</a></li>
+          <li class="skills-li"><a href="#skills">Skills</a></li>
+          <li class="projects-li"><a href="#projects">Projects</a></li>
+          <li class="contact-li"><a href="#contact">Connect</a></li>
+        </div>
       </ul>
     </nav>
   </header>
@@ -43,7 +48,7 @@
           <div class="aboutme-col-txt-items">
             <h2 align="left">About Me</h2>
             <p>
-              Hello!&#x1F44B; I am Anshul Kaushal, a sophomore at Panjab University. 
+              Hello!&#x1F44B; I am Anshul Kaushal, a junior at Panjab University. 
               I am deeply interested in the relationship between Artificial Intelligence
               and Neuroscience. I am currently educating myself, 
               gaining more knowledge, and seeking experience in this field.
@@ -124,6 +129,68 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="experience"></section>
+      <div class="experience-container">
+        <hr></hr>
+        <h2 align="center">Experience</h2>
+        <div class="experience-items">
+          <div class="experience-items-container">
+            <div class="experience-items-txt">
+              <a href="" style= "text-decoration:none">
+              <p class="heading">IISER Bhopal</p>
+              </a>
+              <p class="subheading">Research Intern: Deep Learning for Medical Imaging</p>
+              <p class="subheading"><b>Guide: Prof. Vinod K Kurmi</b></p>
+              <ul>
+                <li>
+                  Worked on the Mamba state‑space model for a comprehensive multi‑domain medical imaging dataset.
+                </li>
+                <li>
+                  Enhanced conventional CNN‑Transformer‑based image segmentation models by implementing adaptive, advanced
+                  learnable fuzzy systems.
+                </li>
+                <li>
+                  Achieved substantial accuracy improvements while effectively reducing FLOPs, memory consumption, and the overall
+                  parameter count for better computational efficiency
+                </li>
+                <li>
+                  Developed various convolutional neural network architectures, including U‑Net variants such as Trans U‑Net, Residual
+                  U‑Net, U‑Net Squared, and Recurrent U‑Net, without relying on pre‑existing models.
+                </li>
+                <li>
+                  Attained a high level of accuracy (Jaccard Index), surpassing 0.87, demonstrating the effectiveness of the implemented
+                  architectures in accurately segmenting the target features on COVID‑19 Lung Dataset
+                </li> 
+              </ul>   
+            </div>
+          </div>
+        </div>
+        <div class="experience-items">
+          <div class="experience-items-container">
+            <div class="experience-items-txt">
+              <a href="" style= "text-decoration:none">
+              <p class="heading">IIIT- Allahabad</p>
+              </a>
+              <p class="subheading">Research Intern</p>
+              <p class="subheading"><b>Guide: Prof. Uma Shankar Tiwary & Prof. Mohammad Asif</b></p>
+              <ul>
+                <li>
+                  Worked on the classification of 24 distinct emotions using dense EEG data
+                </li>
+                <li>
+                  Gained valuable insights through explainable AI by segmenting the specific frequencies responsible for particular emotions
+                </li> 
+                <li>
+                  Utilized an advanced genetic algorithm for effective hyperparameter tuning.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
     
@@ -322,10 +389,10 @@
           <div class="skills-n-tools-items">
             <div class="skills-n-tools-items-container">
               <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/quill-pen-svgrepo-com.svg" class="modify-svg" />
+                <img src="static/svg_assets/latex-svgrepo-com.svg" class="modify-svg" />
               </div>
               <div class="skills-n-tools-items-text">
-                <p>TKINTER</p>
+                <p>LATEX</p>
               </div>
             </div>
           </div>
@@ -362,14 +429,17 @@
         <div class="project-items">
           <div class="project-items-container">
             <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/Handwritten-Digits-Classifier" style= "text-decoration:none">
-              <p class="heading"> Hand Written Digit Classifier</p>
+              <a href="https://github.com/Enthusiast101/Covid-19-Lung-Infection-Segmentation" style= "text-decoration:none">
+              <p class="heading">COVID‑19 Lung Infection Segmentation</p>
               </a>
               <ul>
                 <li>
-                Uses Deep Neural Network to train model.</li>
+                  Developed various convolutional neural network architectures, including U‑Net variants such as Trans U‑Net, Residual
+                  U‑Net, U‑Net Squared, and Recurrent U‑Net, without relying on pre‑existing models.
+                </li>
                 <li>
-                Uses keras hyper-parameter tuning to select the best parameters.
+                  Attained a high level of accuracy (Jaccard Index), surpassing 0.87, demonstrating the effectiveness of the implemented
+                  architectures in accurately segmenting the target features on COVID‑19 Lung Dataset
                 </li> 
               </ul>   
             </div>
@@ -378,15 +448,26 @@
         <div class="project-items">
           <div class="project-items-container">
             <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/SpamDetector" style= "text-decoration:none">
-              <p class="heading">Spam Detector</p>
+              <a href="https://github.com/Enthusiast101/Transfer-Learning-with-Pytorch-and-gradCAM" style= "text-decoration:none">
+              <p class="heading">Rock‑Paper‑Scissor Classifier</p>
               </a>
               <ul>
                 <li>
-                Performing text data cleaning techniques</li>
+                  Explored t‑SNE (t‑distributed stochastic neighbor embedding) plots, a dimensionality reduction technique, and Grad‑Cam
+                  (Gradient‑weighted Class Activation Mapping) visualization to gain insights into the learned features of the Rock, Paper,
+                  Scissors classifier
+                </li>
                 <li>
-                Uses LSTM model to predict with over 95%+ accuracy
+                  Leveraged a pre‑trained ResNet‑18 neural network for feature extraction, benefiting from the model’s learned
+                  representations
                 </li> 
+                <li>
+                  Implemented data augmentation to modify the dataset enhancing the model’s ability to generalize and improve its
+                  performance on Rock, Paper, Scissors classification tasks
+                </li>
+                <li>
+                  Successfully achieved an accuracy of 85% on training dataset and good real‑world generalization of the model
+                </li>
               </ul>
             </div>
           </div>
@@ -394,14 +475,17 @@
         <div class="project-items">
           <div class="project-items-container">
             <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/Transfer-Learning-with-Pytorch-and-gradCAM" style= "text-decoration:none">
-              <p class="heading">Transfer Learning</p>
+              <a href="https://github.com/Enthusiast101/RAG-Chatbot" style= "text-decoration:none">
+              <p class="heading">RAG Chatbot</p>
               </a>
               <ul>
                 <li>
-                Uses resnet18 model to classify images into Rock, Paper or Scissors with a pretty decent accuracy.</li>
+                  It seamlessly integrates OpenAI’s GPT‑3.5 Turbo API for advanced language processing. In addition, used OpenAI’s text
+                  embeddings to serve as a robust foundation to store and retrieve data
+                </li>
                 <li>
-                Inculcates real-time Grad-CAM visualization to determine the emphasis given to parts of image by the neural network.
+                  Using Pincone Vector Database for storing embedded information facilitates adaptive learning and precise information
+                  retrieval through dot product comparisons, ensuring the chatbot consistently delivers highly relevant responses
                 </li>
               </ul>
             </div>
@@ -412,30 +496,16 @@
             
             <div class="project-items-txt">
               <a href="https://github.com/Enthusiast101/StockMarketPredictor" style= "text-decoration:none">
-              <p class="heading">Stock Marker Prediction</p>
+              <p class="heading">Spam-Ham Detector</p>
               </a>
               <ul>
                 <li>
-                Implementation of LSTM (Long Short Term Memory) Model</li>
-                <li>
-                Predicts market with 95%+ accuracy
+                  It seamlessly integrates OpenAI’s GPT‑3.5 Turbo API for advanced language processing. In addition, used OpenAI’s text
+                  embeddings to serve as a robust foundation to store and retrieve data
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project-items">
-          <div class="project-items-container">
-            
-            <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/Collaborative-Filtering-Recommendation-System-ML" style= "text-decoration:none">
-              <p class="heading">Recommendation System</p>
-              </a>
-              <ul>
                 <li>
-                Vectorization of data to predict the nearest 5 vectors</li>
-                <li>
-                Implementation of Cosine Similarity to do the same
+                  Using Pincone Vector Database for storing embedded information facilitates adaptive learning and precise information
+                  retrieval through dot product comparisons, ensuring the chatbot consistently delivers highly relevant responses                  
                 </li>
               </ul>
             </div>
@@ -476,48 +546,55 @@
   </main>
 
   <script>
-    let sectionVisited = [];
-    document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    let currentSectionId = null;
+    function isInView (el) {
+      if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+      }
 
-    const observerOptions = {
-      root: null, // use the viewport as the container
-      rootMargin: '0px',
-      threshold: 0.3// 50% of the section should be visible
-    };
+      var rect = el.getBoundingClientRect();
 
-    const observerCallback = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          currentSectionId = entry.target.id + "-li";
+      return (
+          rect.top >= 0 &&
+          rect.left >= 50 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+      );
+      }
 
-          var current_section = document.getElementById(currentSectionId);
-          console.log(currentSectionId);
-          var element = current_section.querySelector("a");
-          element.style.color = "#5cc99f";
 
-          sectionVisited.push(currentSectionId);
-        }
-        if (sectionVisited.length > 1){
-          visited = sectionVisited.shift();
-          var current_section = document.getElementById(visited);
-
-          var element = current_section.querySelector("a");
-          // console.log(element);
-          element.style.color = "#ffffff";
-        }
-        // console.log(sectionVisited);
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    sections.forEach(section => {
-        observer.observe(section);
-      });
-    });
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".site-sections li a");
     
+      function highlightNavbar() {
+        let sectionIndex = sections.length
+        const offset = window.innerHeight * 0.8;
+
+        while (--sectionIndex && window.scrollY + offset < sections[sectionIndex].offsetTop) {}
+
+        navLinks.forEach(function(link, index) {
+          if (sectionIndex == index){
+            link.style.color = "#5cc99f";
+          }
+          else {
+            link.style.color = "#ffffff";
+          }
+        })
+
+        const allSections = document.querySelectorAll(".site-sections li");
+        if (!isInView(allSections[sectionIndex])){
+          allSections[sectionIndex].scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'start'
+          })
+        }
+        
+      }
+      
+      window.addEventListener("scroll", highlightNavbar);
+    });
+
 
     document.addEventListener("DOMContentLoaded", function () {
       const navLinks = document.querySelectorAll("nav ul li a");
@@ -546,7 +623,7 @@
   </script>
 
   <footer>
-    <p style="font-size: 15px">&copy; 2023 Anshul Kaushal. All rights reserved.</p>
+    <p style="font-size: 15px">&copy; 2024 Anshul Kaushal. All rights reserved.</p>
     <p style="font-size: 15px;"> Inspired by <a href="https://template-9-rr.read.gd/">@dorik web-template</a></p>
   </footer>
 </body>

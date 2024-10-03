@@ -8,13 +8,42 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+body{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(14, 17, 22);
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1c1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5cc99f;
+  /* background: linear-gradient(
+      #f9e14c,
+      #e9963d,
+      rgb(255, 252, 234),
+      rgb(249, 225, 76),
+      rgb(233, 150, 61)
+  ); */
+}
+
+.site-sections li a {
+  color: white; 
+  transition: color 0.3s;
+}
+
+li.about-li a {
+  color: #5cc99f;
 }
 
 h2 {
@@ -64,7 +93,7 @@ nav li {
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: "Righteous", cursive;
-  font-size: larger;
+  font-size: large;
   font-weight: light; 
 }
 
@@ -78,7 +107,7 @@ nav a:hover {
 }
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 5px;
   margin-left: 0;
@@ -136,8 +165,47 @@ ul li::marker {
   padding-left: 20px;
 }
 
+.subheading {
+  font-weight: 500;
+  padding-left: 20px;
+  font-style: italic;
+}
+
 /* Less than 1054px */
 @media (max-width: 1054px) {
+  nav {
+    padding-top: 0px;
+    height: fit-content;
+  }
+
+  .header-li {
+    display: flex;
+  }
+
+  .name-logo {
+    padding-top: 5px;
+    flex: 100px;
+    align-items: stretch;
+  }
+
+  .site-sections {
+    padding-top: 20px;
+    overflow-x: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav ul {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
   /* Making Header */
   header {
     background-color: rgb(0, 0, 0);
@@ -181,10 +249,11 @@ ul li::marker {
   .aboutme-row {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 50px;
   }
   
   .aboutme-col-img {
@@ -242,61 +311,91 @@ ul li::marker {
     text-align: center;
   }
 
+  /* Experience */
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .experience-items {
+    display: flex;
+    width: auto;
+    margin: 0rem 5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: black;
+  
+    box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
+    border-radius: 20px 0px 20px 0px;
+  }
+
+  .experience-items-container {
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px 30px 30px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-items-img {
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .experience-items-txt {
+    flex: 80%;
+  }
+
   /* My Skills and Tools */
   .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
-    grid-gap: 0.5em;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-left: 4rem;
-    margin-right: 4rem;
-    /* padding-bottom: 100px; */
+    grid-gap: 1em;
+    margin: 0rem 5rem;
+    padding-bottom: 100px;
   }
 
   .skills {
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
-
+  
   .skills-n-tools-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0rem 2rem;
+    justify-content: center;
   }
 
   .skills-n-tools-items {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 1rem 1rem;
-    width: calc(100% - 2rem);
-    /* height: 200px; */
+    justify-content: center;
+    margin: 10px;
     background-color: black;
     box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
     border-radius: 20px 0px 20px 0px;
+    /* padding: 60px 10px  10px; */
   }
 
   .skills-n-tools-items-container {
-    width:auto;
     display: flex;
     flex-direction: column;
+    padding-top: auto;
     align-items: center;
-    padding: 35px 10px 0px 10px;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 
   .skills-n-tools-items-pic {
     flex: 40%;
-    justify-content: flex-end;
   }
 
   .skills-n-tools-items-text {
     flex: 60%;
-    text-align: left;
+    text-align: center;
   }
 
   /* My projects */
@@ -380,6 +479,10 @@ ul li::marker {
 
 /* Greater than 1055px */
 @media (min-width: 1055px){
+  .logo {
+    position: absolute;
+  }
+
   nav {
     padding-top: 17px;
     z-index: 1;
@@ -390,7 +493,7 @@ ul li::marker {
     background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: right;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 5px;
     font-size: 18px;
   }
@@ -398,7 +501,7 @@ ul li::marker {
   /* Image modify */
   img {
     max-width: 100%;
-    height: auto;
+    height: 90%;
     display: block;
     margin: 0 auto;
   }
@@ -422,6 +525,8 @@ ul li::marker {
   .aboutme-col-img {
     flex: 40%;
     padding-left: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .aboutme-col-txt-container {
@@ -442,12 +547,13 @@ ul li::marker {
     display: flex;
     flex-direction: row;
     padding-bottom: 100px;
+    margin: auto 4%;
   }
 
   .interest-items {
-    margin-top: 0;
-    margin: auto 5rem;
-    width: 100%;
+    flex: 0 50%;
+    margin: 0 2rem;
+    align-items: stretch;
     background-color: black;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -472,45 +578,80 @@ ul li::marker {
     text-align: center;
   }
 
+  /* Experience */
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+
+  .experience-items {
+    display: flex;
+    width: auto;
+    margin: 0rem 5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: black;
+  
+    box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
+    border-radius: 20px 0px 20px 0px;
+  }
+
+  .experience-items-container {
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-items-img {
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .experience-items-txt {
+    flex: 80%;
+  }
+
   /* My Skills and Tools */
   .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
-    grid-gap: 3em;
-    margin-left: 4rem;
-    margin-right: 7.4rem;
+    grid-gap: 1em;
+    margin: 0rem 5rem;
     padding-bottom: 100px;
   }
 
   .skills {
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   
   .skills-n-tools-container {
     display: flex;
-    flex-direction: row;
-    /* margin: 0rem 5rem; */
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
+    justify-content: center;
   }
 
   .skills-n-tools-items {
-    margin: 2rem 1rem;
-    width: 100%;
-    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     background-color: black;
     box-shadow: 20px 20px 0px 0px rgba(254, 229, 181, 0.05);
     border-radius: 20px 0px 20px 0px;
-    padding: 60px 10px 0px 10px;
+    /* padding: 60px 10px  10px; */
   }
 
   .skills-n-tools-items-container {
-    width:auto;
-    /* height: 4rem; */
     display: flex;
     flex-direction: column;
+    padding-top: auto;
     align-items: center;
   }
 
@@ -520,7 +661,7 @@ ul li::marker {
 
   .skills-n-tools-items-text {
     flex: 60%;
-    text-align: left;
+    text-align: center;
   }
 
    /* My projects */
