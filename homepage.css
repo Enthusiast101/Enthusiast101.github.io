@@ -184,13 +184,16 @@ ul li::marker {
 
   .name-logo {
     padding-top: 5px;
-    flex: 100px;
-    align-items: stretch;
+    width: 70px;
+    align-items: left;
   }
 
   .site-sections {
     padding-top: 20px;
     overflow-x: scroll;
+    width: 100%;
+    /* align-items: center;
+    justify-content: center; */
   }
 
   ::-webkit-scrollbar {
