@@ -1,623 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
-  <title>Anshul Kaushal</title>
-  <link rel="stylesheet" href= "homepage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anshul Kaushal · AI Researcher</title>
+  <meta name="description" content="Anshul Kaushal — AI researcher (M.Tech. AI, IIT Patna) working on LLM safety, mechanistic interpretability, multimodal learning and computer vision.">
+  <meta name="author" content="Anshul Kaushal">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="canonical" href="https://enthusiast101.github.io/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Anshul Kaushal · AI Researcher">
+  <meta property="og:description" content="LLM safety, mechanistic interpretability, multimodal learning and computer vision.">
+  <meta property="og:url" content="https://enthusiast101.github.io/">
+  <meta property="og:image" content="https://enthusiast101.github.io/static/img_assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="static/svg_assets/Logo.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,450;1,450&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anshul Kaushal",
+    "jobTitle": "AI Researcher",
+    "url": "https://enthusiast101.github.io/",
+    "email": "mailto:kaushal1anshul@gmail.com",
+    "image": "https://enthusiast101.github.io/static/img_assets/profile.jpg",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Patna" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Panjab University" },
+    "knowsAbout": ["LLM Safety", "Mechanistic Interpretability", "Multimodal Learning", "Computer Vision"],
+    "sameAs": [
+      "https://github.com/Enthusiast101",
+      "https://www.linkedin.com/in/kaushal1anshul/",
+      "https://scholar.google.com/citations?user=FJUJ-_cAAAAJ"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="header-li">
-        <div class="name-logo">
-          <li class="logo"> 
-            <img src="static/svg_assets/Logo.svg" class="modify-logo" />  
-          </li>
-        </div>
-        <div class="site-sections">
-          <li class="about-li"><a href="#about">About</a></li>
-          <li class="interests-li"><a href="#interests">Interests</a></li>
-          <li class="experience-li"><a href="#experience">Experience</a></li>
-          <li class="skills-li"><a href="#skills">Skills</a></li>
-          <li class="projects-li"><a href="#projects">Projects</a></li>
-          <li class="contact-li"><a href="#contact">Connect</a></li>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-logo" href="#about" aria-label="Anshul Kaushal — home">
+        <img src="static/svg_assets/Logo.svg" alt="" width="52" height="40">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Connect</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <div class="aboutme-row">
+  <main id="main">
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section hero">
+      <div class="container hero-grid">
+        <figure class="hero-photo">
+          <img src="static/img_assets/profile.jpg" alt="Portrait of Anshul Kaushal" width="800" height="800">
+        </figure>
 
-        <div class="aboutme-col-img">
-            <img src="static/img_assets/astronaut.jpg" class="modify-img" />
-        </div>
+        <div class="hero-text">
+          <hr class="accent-bar">
+          <h1>Anshul Kaushal</h1>
+          <p class="hero-role">AI Researcher · M.Tech. Artificial Intelligence, IIT Patna</p>
+          <p>
+            Hello!&nbsp;&#x1F44B; I study how large models work on the inside and how to keep them safe.
+            My research covers <strong>LLM safety</strong>, <strong>mechanistic interpretability</strong>,
+            <strong>multimodal learning</strong> and <strong>computer vision</strong>.
+          </p>
+          <p>
+            Across five research internships at Lexsi Labs, IIT Jodhpur, the National Astronomical Observatory
+            of Japan, IISER Bhopal and IIIT Allahabad, I have co-authored six papers at venues including
+            <em>EMNLP</em>, <em>BMVC</em>, <em>The Astrophysical Journal</em> and a <em>NeurIPS</em> workshop.
+            Most recently I built <a href="https://github.com/Lexsi-Labs/SafeTune" target="_blank" rel="noopener">SAFETUNE</a>,
+            a framework for auditing and repairing safety drift in fine-tuned LLMs.
+          </p>
+          <p>If you share these interests, I'd love to talk and collaborate.&nbsp;&#x1F609;</p>
 
-        <div class="aboutme-col-txt-container">
-          <div class="aboutme-col-txt-items">
-            <hr align="left"></hr>
-          </div>
-          <div class="aboutme-col-txt-items">
-            <h2 align="left">About Me</h2>
-            <p>
-              Hello!&#x1F44B; I am Anshul Kaushal, a junior at Panjab University. 
-              I am deeply interested in the relationship between Artificial Intelligence
-              and Neuroscience. I am currently educating myself, 
-              gaining more knowledge, and seeking experience in this field.
-            </p>
-            <p> 
-              Let's engage in a conversation and collaborate if you share the same interest.&#x1F609;
-            </p>
-          </div>
-          <div class="aboutme-col-txt-items">
-            <form method="get" action="static/download_pdfs/Resume.pdf">
-              <button class="button-modify" type="submit">Download Resume</button>
-            </form>
-          </div>
-        </div>
-
-      </div> 
-    </section>
-
-    <section id="interests">
-      <hr></hr>
-      <h2 align="center">Interests</h2>
-      <div class="interest-container">
-        <div class="interest-items">
-          <div class="interest-items-container">
-            <div class="interest-items-img">
-              <img src="static/svg_assets/artificial-brain-computer-svgrepo-com.svg" class="modify-svg" />
-            </div>
-            <div class="interest-items-txt">
-              <p>REINFORCEMENT LEARNING</p>
-              <p align="center">Reinforcement learning is a dynamic machine learning approach where agents learn by interacting 
-                with an environment to maximize rewards. Unlike supervised learning, it relies on trial-and-error. The agent 
-                takes actions, receives rewards, and refines its strategy over time. The goal is to learn an optimal policy 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="interest-items">
-          <div class="interest-items-container">
-            <div class="interest-items-img">
-              <img src="static/svg_assets/brain-svgrepo-com.svg" class="modify-svg" />
-            </div>
-            <div class="interest-items-txt">
-              <p>DEEP LEARNING</p>
-              <p align="center">Deep learning is a neural network-based subset of machine learning. It leverages 
-                multiple interconnected layers to automatically learn features from data, excelling in tasks like 
-                image recognition and natural language processing. Its power lies in vast data and computational 
-                resources. It has exceptional generalizability.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="interest-container">
-        <div class="interest-items">
-          <div class="interest-items-container">
-            <div class="interest-items-img">
-              <img src="static/svg_assets/view-eye-svgrepo-com.svg" class="modify-svg" />
-            </div>
-            <div class="interest-items-txt">
-              <p>COMPUTER VISION</p>
-              <p align="center">Computer vision involves teaching machines to interpret and understand visual 
-                information from the world. It encompasses image and video analysis, enabling applications like 
-                object detection, facial recognition, and autonomous driving. By extracting features and patterns, 
-                machines can replicate human vision.</p>
-            </div>
-          </div>
-        </div>
-        <div class="interest-items">
-          <div class="interest-items-container">
-            <div class="interest-items-img">
-              <img src="static/svg_assets/language-svgrepo-com.svg" class="modify-svg" />
-            </div>
-            <div class="interest-items-txt">
-              <p>NATURAL LANGUAGE PROCESSING</p>
-              <p align="center">Natural Language Processing (NLP) is about enabling computers to understand, 
-                interpret, and generate human language. It encompasses tasks like language translation, sentiment 
-                analysis, and chatbots. NLP utilizes machine learning and deep learning techniques to process and 
-                comprehend text data.</p>
-            </div>
+          <div class="hero-actions">
+            <a class="btn" href="static/download_pdfs/Resume.pdf" download="Anshul_Kaushal_CV.pdf">Download CV</a>
+            <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=FJUJ-_cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="experience"></section>
-      <div class="experience-container">
-        <hr></hr>
-        <h2 align="center">Experience</h2>
-        <div class="experience-items">
-          <div class="experience-items-container">
-            <div class="experience-items-txt">
-              <a href="" style= "text-decoration:none">
-              <p class="heading">IISER Bhopal</p>
-              </a>
-              <p class="subheading">Research Intern: Deep Learning for Medical Imaging</p>
-              <p class="subheading"><b>Guide: Prof. Vinod K Kurmi</b></p>
-              <ul>
-                <li>
-                  Worked on the Mamba state‑space model for a comprehensive multi‑domain medical imaging dataset.
-                </li>
-                <li>
-                  Enhanced conventional CNN‑Transformer‑based image segmentation models by implementing adaptive, advanced
-                  learnable fuzzy systems.
-                </li>
-                <li>
-                  Achieved substantial accuracy improvements while effectively reducing FLOPs, memory consumption, and the overall
-                  parameter count for better computational efficiency
-                </li>
-              </ul>   
-            </div>
-          </div>
-        </div>
-        <div class="experience-items">
-          <div class="experience-items-container">
-            <div class="experience-items-txt">
-              <a href="" style= "text-decoration:none">
-              <p class="heading">IIIT- Allahabad</p>
-              </a>
-              <p class="subheading">Research Intern</p>
-              <p class="subheading"><b>Guide: Prof. Uma Shankar Tiwary & Prof. Mohammad Asif</b></p>
-              <ul>
-                <li>
-                  Worked on the classification of 24 distinct emotions using dense EEG data
-                </li>
-                <li>
-                  Gained valuable insights through explainable AI by segmenting the specific frequencies responsible for particular emotions
-                </li> 
-                <li>
-                  Utilized an advanced genetic algorithm for effective hyperparameter tuning.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    
-    <section id="skills">
-      <div class="skills">
-        <hr></hr>
-        <h2 align="center">Skills</h2>
-
-        <div class="grid-wrapper">
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/pytorch-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>PYTORCH</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/tensorflow-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>TENSORFLOW</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/keras-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>KERAS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/opencvmanager-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>OPEN CV</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/scikitlearn-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>SCIKIT-LEARN</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/plot-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>MATPLOTLIB</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/numpy-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>NUMPY</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/pandas-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>PANDAS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/chart-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>SEABORN</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/mysql-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>MYSQL</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/c-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>C Language</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/c-plus-plus-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>C++ Language</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/python-127-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>PYTHON</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/html5-01-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>HTML</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/css3-01-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>CSS</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/letter-m-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>MANIM</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/pygame_logo.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>PYGAME</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/latex-svgrepo-com.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>LATEX</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/hf-logo.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>HUGGING FACE</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="skills-n-tools-items">
-            <div class="skills-n-tools-items-container">
-              <div class="skills-n-tools-items-pic">
-                <img src="static/svg_assets/yolo.svg" class="modify-svg" />
-              </div>
-              <div class="skills-n-tools-items-text">
-                <p>YOLOv8</p>
-              </div>
-            </div>
-          </div>
-        
-        </div>
-    </section>
-
-    <section id="projects">
-      <div class="project-container">
-        <hr style="margin-top: 0px;"></hr>
-        <h2 align="center">Projects</h2>
-        <div class="project-items">
-          <div class="project-items-container">
-            <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/Covid-19-Lung-Infection-Segmentation" style= "text-decoration:none">
-              <p class="heading">COVID‑19 Lung Infection Segmentation</p>
-              </a>
-              <ul>
-                <li>
-                  Developed various convolutional neural network architectures, including U‑Net variants such as Trans U‑Net, Residual
-                  U‑Net, U‑Net Squared, and Recurrent U‑Net, without relying on pre‑existing models.
-                </li>
-                <li>
-                  Attained a high level of accuracy (Jaccard Index), surpassing 0.87, demonstrating the effectiveness of the implemented
-                  architectures in accurately segmenting the target features on COVID‑19 Lung Dataset
-                </li> 
-              </ul>   
-            </div>
-          </div>
-        </div>
-        <div class="project-items">
-          <div class="project-items-container">
-            <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/Transfer-Learning-with-Pytorch-and-gradCAM" style= "text-decoration:none">
-              <p class="heading">Rock‑Paper‑Scissor Classifier</p>
-              </a>
-              <ul>
-                <li>
-                  Explored t‑SNE (t‑distributed stochastic neighbor embedding) plots, a dimensionality reduction technique, and Grad‑Cam
-                  (Gradient‑weighted Class Activation Mapping) visualization to gain insights into the learned features of the Rock, Paper,
-                  Scissors classifier
-                </li>
-                <li>
-                  Leveraged a pre‑trained ResNet‑18 neural network for feature extraction, benefiting from the model’s learned
-                  representations
-                </li> 
-                <li>
-                  Implemented data augmentation to modify the dataset enhancing the model’s ability to generalize and improve its
-                  performance on Rock, Paper, Scissors classification tasks
-                </li>
-                <li>
-                  Successfully achieved an accuracy of 85% on training dataset and good real‑world generalization of the model
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project-items">
-          <div class="project-items-container">
-            <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/RAG-Chatbot" style= "text-decoration:none">
-              <p class="heading">RAG Chatbot</p>
-              </a>
-              <ul>
-                <li>
-                  It seamlessly integrates OpenAI’s GPT‑3.5 Turbo API for advanced language processing. In addition, used OpenAI’s text
-                  embeddings to serve as a robust foundation to store and retrieve data
-                </li>
-                <li>
-                  Using Pincone Vector Database for storing embedded information facilitates adaptive learning and precise information
-                  retrieval through dot product comparisons, ensuring the chatbot consistently delivers highly relevant responses
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project-items">
-          <div class="project-items-container">
-            
-            <div class="project-items-txt">
-              <a href="https://github.com/Enthusiast101/SpamDetector" style= "text-decoration:none">
-              <p class="heading">Spam-Ham Detector</p>
-              </a>
-              <ul>
-                <li>
-                  Acquired knowledge of Long Short‑Term Memory (LSTM) networks, a type of recurrent neural network (RNN), and
-                  successfully implemented this model
-                </li>
-                <li>
-                  Explored and applied essential text data preprocessing techniques, including lemmatization to reduce words to their base
-                  form, tokenization for breaking text into individual words or tokens, removal of symbols, and eliminating common stop
-                  words                  
-                </li>
-              </ul>
-            </div>
-          </div>
+    <!-- ============ INTERESTS ============ -->
+    <section id="interests" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Research Interests</h2>
+        <div class="card-grid card-grid-2">
+          <article class="card interest-card">
+            <img src="static/svg_assets/artificial-brain-computer-svgrepo-com.svg" alt="" class="icon" width="40" height="40">
+            <h3>LLM Safety &amp; Alignment</h3>
+            <p>Auditing and repairing the safety of fine-tuned language models: measuring how alignment drifts
+              during fine-tuning, and restoring it without giving up task performance.</p>
+          </article>
+          <article class="card interest-card">
+            <img src="static/svg_assets/brain-svgrepo-com.svg" alt="" class="icon" width="40" height="40">
+            <h3>Mechanistic Interpretability</h3>
+            <p>Reverse-engineering model internals through safety-circuit discovery, steering vectors and
+              representation analysis, with a focus on multilingual LLM safety.</p>
+          </article>
+          <article class="card interest-card">
+            <img src="static/svg_assets/language-svgrepo-com.svg" alt="" class="icon" width="40" height="40">
+            <h3>Multimodal Learning</h3>
+            <p>Data-efficient image–text representation learning, such as pairing self-supervised vision
+              encoders like DINOv2 with CLIP-style objectives for multimodal LLMs.</p>
+          </article>
+          <article class="card interest-card">
+            <img src="static/svg_assets/view-eye-svgrepo-com.svg" alt="" class="icon" width="40" height="40">
+            <h3>Computer Vision</h3>
+            <p>Efficient medical image segmentation, state-space vision models (Mamba), uncertainty-aware
+              architectures and explainable AI for visual recognition.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="connect">
-        <div class="connect-items">
-          <h2 align="center">Connect</h2>
+    <!-- ============ EDUCATION + EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Experience</h2>
+
+        <h3 class="subsection-title">Education</h3>
+        <div class="card-grid card-grid-2">
+          <article class="card edu-card">
+            <p class="meta">2026 – Present</p>
+            <h4>Indian Institute of Technology, Patna</h4>
+            <p class="role">M.Tech., Artificial Intelligence</p>
+          </article>
+          <article class="card edu-card">
+            <p class="meta">2022 – 2026</p>
+            <h4>Panjab University</h4>
+            <p class="role">B.E., Computer Science &amp; Engineering · CGPA 9.07 / 10</p>
+          </article>
         </div>
-        <div class="connect-items">
-          <p align="center">Let's connect and build something truly incredible!&#x1F92F;</p>
+
+        <h3 class="subsection-title">Research Experience</h3>
+        <ol class="timeline">
+          <li class="card timeline-item">
+            <div class="timeline-head">
+              <h4>Lexsi Labs (Aurionpro)</h4>
+              <p class="meta">Feb 2026 – Aug 2026 · Remote</p>
+            </div>
+            <p class="role">Research Intern: Mechanistic Interpretability and Safety in LLMs</p>
+            <ul>
+              <li>Built <a href="https://github.com/Lexsi-Labs/SafeTune" target="_blank" rel="noopener">SAFETUNE</a>, a unified AI-safety framework that integrates 118+ methods for auditing, repairing and preserving safety in fine-tuned language models.</li>
+              <li>Applied mechanistic interpretability, safety-circuit discovery and steering vectors to analyse multilingual LLM safety and support model alignment.</li>
+            </ul>
+          </li>
+
+          <li class="card timeline-item">
+            <div class="timeline-head">
+              <h4>Indian Institute of Technology Jodhpur</h4>
+              <p class="meta">May 2025 – Jan 2026 · Jodhpur, India</p>
+            </div>
+            <p class="role">ACM IKDD Scholar: Self-Supervised Vision and Multimodal Learning</p>
+            <ul>
+              <li>Built a CLIP-like image–text representation model by integrating the DINOv2 self-supervised vision encoder into MetaCLIP, for downstream multimodal LLM applications.</li>
+              <li>Aligned the vision backbone using 99K CC and LAION image–caption pairs, reducing the data and compute needed for multimodal representation learning.</li>
+              <li>Improved zero-shot classification by ~2% on ImageNet-1K, ObjectNet and iNat2021.</li>
+            </ul>
+          </li>
+
+          <li class="card timeline-item">
+            <div class="timeline-head">
+              <h4>National Astronomical Observatory of Japan</h4>
+              <p class="meta">Nov 2024 – Nov 2025 · Remote (Mitaka, Japan)</p>
+            </div>
+            <p class="role">Research Intern: Sparse Signal Reconstruction</p>
+            <ul>
+              <li>Reconstructed sparse Gamma-Ray Burst (GRB) light curves across four morphologies: Good, Break, Flares, and Break with Flares.</li>
+              <li>Benchmarked Conditional GANs, Mamba state-space models and polynomial fitting for sparse signal reconstruction.</li>
+              <li>Reduced uncertainty relative to prior studies to 37% for log T<sub>a</sub>, 38% for log F<sub>a</sub> and 41% for &alpha;.</li>
+            </ul>
+          </li>
+
+          <li class="card timeline-item">
+            <div class="timeline-head">
+              <h4>IISER Bhopal</h4>
+              <p class="meta">Jun 2024 – Jul 2024 · Bhopal, India</p>
+            </div>
+            <p class="role">Research Intern: Medical Image Segmentation · Guide: Prof. Vinod K. Kurmi</p>
+            <ul>
+              <li>Studied Vision-Mamba state-space models for multi-domain medical imaging and semantic segmentation.</li>
+              <li>Extended CNN–Transformer segmentation models with an adaptive, learnable fuzzy-logic module across four public datasets.</li>
+              <li>Improved accuracy by 2% while cutting FLOPs, memory use and parameter count by 30%.</li>
+            </ul>
+          </li>
+
+          <li class="card timeline-item">
+            <div class="timeline-head">
+              <h4>IIIT Allahabad</h4>
+              <p class="meta">Mar 2024 – Jun 2024 · Remote</p>
+            </div>
+            <p class="role">Research Intern: Emotion Classification using EEG · Guides: Prof. Uma Shankar Tiwary &amp; Prof. Mohammad Asif</p>
+            <ul>
+              <li>Classified 24 emotions from high-density EEG data for affective computing.</li>
+              <li>Tuned hyperparameters with a genetic algorithm, improving accuracy and F1-score by 4%.</li>
+              <li>Used explainable AI (XAI) to identify the EEG frequency bands linked to specific emotional states.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Publications</h2>
+        <ol class="pub-list">
+          <li class="card pub">
+            <span class="badge">NeurIPS 2026 Workshop</span>
+            <h4>Drift, Then Repair: A Safety Audit of Fine-Tuned Language Models</h4>
+            <p class="authors">P. Seth, <strong>Anshul Kaushal</strong>, S. Sadhu, V. K. Sankrapu</p>
+            <p class="venue">NeurIPS 2026 FLLMPT Workshop</p>
+            <p class="pub-links"><a href="https://github.com/Lexsi-Labs/SafeTune" target="_blank" rel="noopener">Library</a></p>
+          </li>
+          <li class="card pub">
+            <span class="badge">EMNLP 2026 Demo</span>
+            <h4>SAFETUNE: A Unified, Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs</h4>
+            <p class="authors">P. Seth, S. Sadhu, <strong>Anshul Kaushal</strong>, V. K. Sankrapu</p>
+            <p class="venue">EMNLP 2026, System Demonstrations Track</p>
+            <p class="pub-links"><a href="https://github.com/Lexsi-Labs/SafeTune" target="_blank" rel="noopener">Library</a></p>
+          </li>
+          <li class="card pub">
+            <span class="badge">BMVC 2025 · Core A</span>
+            <h4>CLFSeg: A Fuzzy-Logic based Solution for Boundary Clarity and Uncertainty Reduction in Medical Image Segmentation</h4>
+            <p class="authors"><strong>Anshul Kaushal</strong>, K. Jangid, V. K. Kurmi</p>
+            <p class="venue">British Machine Vision Conference (BMVC) 2025</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2510.24202" target="_blank" rel="noopener">Paper</a></p>
+          </li>
+          <li class="card pub">
+            <span class="badge">JHEAp</span>
+            <h4>Multi-Model Framework for Reconstructing Gamma-Ray Burst Light Curves</h4>
+            <p class="authors"><strong>Anshul Kaushal</strong>, A. Manchanda, M. G. Dainotti, et al.</p>
+            <p class="venue">Journal of High Energy Astrophysics</p>
+            <p class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2214404825002009" target="_blank" rel="noopener">Paper</a></p>
+          </li>
+          <li class="card pub">
+            <span class="badge">ApJ</span>
+            <h4>Gamma-Ray Burst Light Curve Reconstruction: A Comparative Machine and Deep Learning Analysis</h4>
+            <p class="authors">A. Manchanda, <strong>Anshul Kaushal</strong>, M. G. Dainotti, et al.</p>
+            <p class="venue">The Astrophysical Journal</p>
+            <p class="pub-links"><a href="https://iopscience.iop.org/article/10.3847/1538-4365/ade851" target="_blank" rel="noopener">Paper</a></p>
+          </li>
+          <li class="card pub">
+            <span class="badge">ICCCNT 2024</span>
+            <h4>Optimizing Emotion Recognition in EEG Data: A Genetic Algorithm Approach with XAI Insights</h4>
+            <p class="authors">N. Ali, M. Asif, <strong>Anshul Kaushal</strong>, U. Singh, U. S. Tiwari</p>
+            <p class="venue">ICCCNT 2024</p>
+            <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10725514" target="_blank" rel="noopener">Paper</a></p>
+          </li>
+        </ol>
+        <p class="center-note">Full list on <a href="https://scholar.google.com/citations?user=FJUJ-_cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Projects</h2>
+        <div class="card-grid card-grid-3">
+          <article class="card project-card">
+            <h4><a href="https://github.com/Enthusiast101/Covid19-Segmentation" target="_blank" rel="noopener">COVID-19 Lung Infection Segmentation</a></h4>
+            <p class="tags">Semantic segmentation · U-Net variants · Medical imaging</p>
+            <ul>
+              <li>Implemented Trans, Residual, Squared and Recurrent U-Net variants, reaching a Jaccard index above 0.87.</li>
+              <li>Served model inference through FastAPI and Streamlit for real-time predictions.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Enthusiast101/Covid19-Segmentation" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
+          <article class="card project-card">
+            <h4><a href="https://github.com/Enthusiast101/RAG-Chatbot" target="_blank" rel="noopener">Academic Research RAG-bot</a></h4>
+            <p class="tags">RAG · LLMs · Vector search</p>
+            <ul>
+              <li>Built a retrieval-augmented generation pipeline with GPT-3.5 Turbo and text embeddings for answering questions about research papers.</li>
+              <li>Used Pinecone with dot-product similarity for semantic search over embedded papers.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Enthusiast101/RAG-Chatbot" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
+          <article class="card project-card">
+            <h4><a href="https://github.com/Enthusiast101/Transfer-Learning-with-Pytorch-and-gradCAM" target="_blank" rel="noopener">Rock-Paper-Scissors Classifier</a></h4>
+            <p class="tags">Transfer learning · Computer vision · Interpretability</p>
+            <ul>
+              <li>Fine-tuned a pre-trained ResNet-18 with data augmentation, reaching 85% training accuracy.</li>
+              <li>Interpreted learned features using Grad-CAM and t-SNE visualisations with OpenCV.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Enthusiast101/Transfer-Learning-with-Pytorch-and-gradCAM" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
         </div>
-        <div class="connect-items">
-          <div class="connect-social-container">
-            <div class="connect-icons">
-              <a href="https://www.linkedin.com/in/kaushal1anshul">
-                <img src="static/svg_assets/linkedin-rounded-svgrepo-com.svg" class="modify-svg" />
-              </a>
-            </div>
-            <div class="connect-icons">
-              <a href="https://github.com/Enthusiast101">
-                <img src="static/svg_assets/github-svgrepo-com.svg" class="modify-svg" />
-              </a>
-            </div>
-            <div class="connect-icons">
-              <a href="mailto: kaushal1anshul@gmail.com">
-                <img src="static/svg_assets/email-svgrepo-com.svg" class="modify-svg" />
-              </a>
-            </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Skills</h2>
+
+        <ul class="tool-grid" aria-label="Core tools">
+          <li class="card tool"><img src="static/svg_assets/pytorch-svgrepo-com.svg" alt="" width="40" height="40"><span>PyTorch</span></li>
+          <li class="card tool"><img src="static/svg_assets/hf-logo.svg" alt="" width="40" height="40"><span>Hugging Face</span></li>
+          <li class="card tool"><img src="static/svg_assets/tensorflow-svgrepo-com.svg" alt="" width="40" height="40"><span>TensorFlow</span></li>
+          <li class="card tool"><img src="static/svg_assets/keras-svgrepo-com.svg" alt="" width="40" height="40"><span>Keras</span></li>
+          <li class="card tool"><img src="static/svg_assets/scikitlearn-svgrepo-com.svg" alt="" width="40" height="40"><span>Scikit-learn</span></li>
+          <li class="card tool"><img src="static/svg_assets/opencvmanager-svgrepo-com.svg" alt="" width="40" height="40"><span>OpenCV</span></li>
+          <li class="card tool"><img src="static/svg_assets/numpy-svgrepo-com.svg" alt="" width="40" height="40"><span>NumPy</span></li>
+          <li class="card tool"><img src="static/svg_assets/pandas-svgrepo-com.svg" alt="" width="40" height="40"><span>Pandas</span></li>
+          <li class="card tool"><img src="static/svg_assets/python-127-svgrepo-com.svg" alt="" width="40" height="40"><span>Python</span></li>
+          <li class="card tool"><img src="static/svg_assets/c-plus-plus-svgrepo-com.svg" alt="" width="40" height="40"><span>C / C++</span></li>
+          <li class="card tool"><img src="static/svg_assets/mysql-svgrepo-com.svg" alt="" width="40" height="40"><span>SQL</span></li>
+          <li class="card tool"><img src="static/svg_assets/latex-svgrepo-com.svg" alt="" width="40" height="40"><span>LaTeX</span></li>
+        </ul>
+
+        <dl class="skill-groups">
+          <div class="card skill-group">
+            <dt>LLM &amp; Multimodal AI</dt>
+            <dd>LLM safety, mechanistic interpretability, model alignment &amp; auditing, safety-circuit discovery, steering vectors, multimodal LLMs, RAG, text embeddings, vector databases</dd>
           </div>
+          <div class="card skill-group">
+            <dt>Machine Learning</dt>
+            <dd>Deep learning, representation &amp; self-supervised learning, transfer learning, generative AI, computer vision, semantic segmentation, hyperparameter optimisation, explainable AI</dd>
+          </div>
+          <div class="card skill-group">
+            <dt>Models &amp; Methods</dt>
+            <dd>DINOv2, MetaCLIP, CLIP, Mamba SSMs, Conditional GANs, CNN–Transformers, U-Net, ResNet, genetic algorithms, fuzzy logic, Grad-CAM, t-SNE</dd>
+          </div>
+          <div class="card skill-group">
+            <dt>Languages, Libraries &amp; Tools</dt>
+            <dd>Python, C, C++, SQL, MATLAB, LaTeX, JavaScript · PyTorch, TensorFlow, Hugging Face, Matplotlib, Seaborn, FastAPI, Streamlit · Linux, Git, Docker, CUDA, AWS, GCP, Jupyter</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ HONOURS ============ -->
+    <section id="honors" class="section">
+      <div class="container">
+        <hr class="accent-bar center">
+        <h2>Honours</h2>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3 class="card-title">Achievements</h3>
+            <ul>
+              <li><strong>MEXT 2027 Scholarship</strong>: top 186 of 7,300 applicants (top 2.5%)</li>
+              <li><strong>ACM IKDD Uplink Research Internship 2025</strong>: 2% acceptance rate</li>
+              <li><strong>Oxford Machine Learning Summer School (OxML) 2025</strong>: shortlisted</li>
+              <li><strong>IELTS Academic</strong>: 8.0 overall band</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Certifications &amp; Service</h3>
+            <ul>
+              <li>MLx Fundamentals (OxML): ML, DL, Representation Learning, Optimisation, Generative AI</li>
+              <li>DeepLearning.AI: Unsupervised Learning, Recommender Systems, Reinforcement Learning</li>
+              <li>Imperial College London: Mathematics for ML (Linear Algebra)</li>
+              <li>AWS Elements of Data Science · Duke University: Data Science Math Skills</li>
+              <li>Core Team, Training &amp; Placement Cell (Oct 2023 – present): co-organised 10+ ML/AI workshops reaching 200+ students</li>
+            </ul>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section connect">
+      <div class="container">
+        <h2>Connect</h2>
+        <p>Open to research collaborations and conversations about AI safety and interpretability.</p>
+        <p><a href="mailto:kaushal1anshul@gmail.com">kaushal1anshul@gmail.com</a></p>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/kaushal1anshul/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="static/svg_assets/linkedin-rounded-svgrepo-com.svg" alt="" width="40" height="40"></a></li>
+          <li><a href="https://github.com/Enthusiast101" target="_blank" rel="noopener" aria-label="GitHub"><img src="static/svg_assets/github-svgrepo-com.svg" alt="" width="40" height="40"></a></li>
+          <li><a href="https://scholar.google.com/citations?user=FJUJ-_cAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><img src="static/svg_assets/quill-pen-svgrepo-com.svg" alt="" width="40" height="40"></a></li>
+          <li><a href="mailto:kaushal1anshul@gmail.com" aria-label="Email"><img src="static/svg_assets/email-svgrepo-com.svg" alt="" width="40" height="40"></a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <script>
-    function isInView (el) {
-      if (typeof jQuery === "function" && el instanceof jQuery) {
-          el = el[0];
-      }
-
-      var rect = el.getBoundingClientRect();
-
-      return (
-          rect.top >= 0 &&
-          rect.left >= 100 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-      );
-      }
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const sections = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll(".site-sections li a");
-    
-      function highlightNavbar() {
-        let sectionIndex = sections.length
-        const offset = window.innerHeight * 0.9;
-
-        while (--sectionIndex && window.scrollY + offset < sections[sectionIndex].offsetTop) {}
-
-        navLinks.forEach(function(link, index) {
-          if (sectionIndex == index){
-            link.style.color = "#5cc99f";
-          }
-          else {
-            link.style.color = "#ffffff";
-          }
-        })
-
-        const allSections = document.querySelectorAll(".site-sections li");
-        if (!isInView(allSections[sectionIndex])){
-          allSections[sectionIndex].scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest',
-            inline: 'start'
-          })
-        }
-        
-      }
-      
-      window.addEventListener("scroll", highlightNavbar);
-    });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const navLinks = document.querySelectorAll("nav ul li a");
-
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-
-          const targetId = link.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
-
-          if (targetElement) {
-            const targetPosition = targetElement.offsetTop;
-            const offset = 75; 
-
-            window.scrollTo({
-              top: targetPosition - offset,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-    });
-
-
-  </script>
-
-  <footer>
-    <p style="font-size: 15px">&copy; 2024 Anshul Kaushal. All rights reserved.</p>
-    <p style="font-size: 15px;"> Inspired by <a href="https://template-9-rr.read.gd/">@dorik web-template</a></p>
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Anshul Kaushal. Inspired by the <a href="https://template-9-rr.read.gd/" target="_blank" rel="noopener">Dorik web template</a>.</p>
   </footer>
+
+  <script>
+    (function () {
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile nav toggle
+      var toggle = document.querySelector(".nav-toggle");
+      var links = document.getElementById("nav-links");
+      toggle.addEventListener("click", function () {
+        var open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        links.classList.toggle("open", !open);
+      });
+      links.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") {
+          toggle.setAttribute("aria-expanded", "false");
+          links.classList.remove("open");
+        }
+      });
+
+      // Highlight the nav link of the section currently in view
+      if (!("IntersectionObserver" in window)) return;
+      var navLinks = {};
+      links.querySelectorAll("a").forEach(function (a) { navLinks[a.getAttribute("href").slice(1)] = a; });
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var id = entry.target.id === "honors" ? "skills" : entry.target.id;
+          Object.keys(navLinks).forEach(function (k) {
+            if (k === id) navLinks[k].setAttribute("aria-current", "true");
+            else navLinks[k].removeAttribute("aria-current");
+          });
+        });
+      }, { rootMargin: "-45% 0px -50% 0px" });
+      document.querySelectorAll("main section[id]").forEach(function (s) { observer.observe(s); });
+    })();
+  </script>
 </body>
 </html>
