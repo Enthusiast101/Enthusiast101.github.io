@@ -266,7 +266,7 @@ ul li::marker { color: var(--accent); }
   border-radius: var(--radius);
   background-color: var(--surface-2);
   box-shadow: 16px 16px 0 0 rgba(254, 229, 181, 0.05);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
   object-fit: cover;
 }
 
